@@ -1,0 +1,20 @@
+<table class="table">
+    <thead>
+        <tr>      
+            <th>Name</th>
+            <th>Nationaity</th>
+            <th>Birth Date</th>
+            <th>player</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let player of players">
+            <td>{{player.name}}</td>
+            <td>{{player.nationaity}}</td>
+            <td>{{player.dateOfBirth | date}}</td>
+            <td>{{player.teamId}}</td> <!-- Replace with team name ! -->
+        </tr>
+    </tbody>
+</table>
